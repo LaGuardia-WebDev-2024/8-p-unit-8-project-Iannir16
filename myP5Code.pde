@@ -2,7 +2,7 @@
 setup = function() {
     size(600, 400);
     background(255,255,255,0);
-    
+    frameRate(5)
   
 
  
@@ -16,6 +16,11 @@ draw = function(){
    drawLeaf(50,200 + leafY)
   drawLeaf(70,250 + leafY)
   drawLeaf(500,100 + leafY)
+  drawLeaf(70,1 + leafY)
+  drawLeaf(180,50 + leafY)
+  drawLeaf(200,30 + leafY)
+  drawLeaf(400,1 + leafY)
+  drawLeaf(400,250 + leafY)
 leafY++
 
  drawButterfly(250,200)
@@ -37,6 +42,10 @@ leafY++
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
 
+  drawButterfly(random(10,500), random(10,300));
+  drawButterfly(random(10,500), random(10,300));
+  drawButterfly(random(10,500), random(10,300));
+  drawButterfly(random(10,500), random(10,300));
 }
 
 //drawButterfly Function 
